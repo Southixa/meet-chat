@@ -11,10 +11,17 @@ export default function Footer() {
       </div>
 
       {/* Footer content with background image */}
-      <footer className="relative pt-24 pb-20 text-[#fafafa] bg-[rgba(77,163,176,0.85)] before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:bg-[url('/assets/mobile/image-footer.jpg')] before:bg-cover before:bg-no-repeat before:z-[-1] md:before:bg-[url('/assets/tablet/image-footer.jpg')] lg:before:bg-[url('/assets/desktop/image-footer.jpg')]">
+      <footer 
+        className="relative pt-24 pb-20 text-[#fafafa]"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(77, 163, 176, 0.85), rgba(77, 163, 176, 0.85)), url(/assets/desktop/image-footer.jpg)',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="max-w-6xl mx-auto px-6 md:px-16 lg:px-24">
           <div className="grid md:grid-cols-3 gap-10 items-center text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-black">Experience more together</h2>
+            <h2 className="text-3xl md:text-3xl font-black">Experience more together</h2>
             <p className="max-w-xs mx-auto md:mx-0">
               Stay connected with reliable HD meetings and unlimited one-on-one
               and group video sessions.
